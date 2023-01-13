@@ -1,0 +1,10 @@
+version: '3'
+
+services: 
+  go:
+    build:
+      context: .
+    volumes:
+      - ./app:/aṕp/
+    tty: true
+    comand: "go build /app/desafio1.go"
